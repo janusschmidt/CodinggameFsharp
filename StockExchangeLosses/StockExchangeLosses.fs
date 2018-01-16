@@ -5,13 +5,11 @@ open System
 type bestAnswer = {max:int; largestDrop:int}
 
 let losses quotes =
-    let updateMax a b = if a<b then b else a
-
     let folder (agg:bestAnswer) (quote:int) =
-        let max = updateMax agg.max quote
-        let drop = max - quote
-        let largestdrop = updateMax agg.largestDrop drop
-        {max=max; largestDrop=largestdrop}
+        let newMax = max agg.max quote
+        let drop = newMax - quote
+        let largestdrop = max agg.largestDrop drop
+        {max=newMax; largestDrop=largestdrop}
 
     quotes |> List.fold folder {max=0;largestDrop=0}
 
