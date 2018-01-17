@@ -14,7 +14,7 @@ let losses quotes =
     quotes |> List.fold folder {max=0;largestDrop=0}
 
 let run() =
-    let read() = Console.In.ReadLine()
+    let read = Console.In.ReadLine
     let numberOFQuotes = read() |> int
     let quotes = read().Split [|' '|] |> Array.map int |> Seq.toList
 

@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "War", "War\War.fsproj", "{0
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StockExchangeLosses", "StockExchangeLosses\StockExchangeLosses.fsproj", "{D8948A27-8D60-4807-BEBF-5733FD295D40}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheLastCrusade", "TheLastCrusade\TheLastCrusade.fsproj", "{D0522212-131B-4151-A9D2-81ED68F48C8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D8948A27-8D60-4807-BEBF-5733FD295D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8948A27-8D60-4807-BEBF-5733FD295D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8948A27-8D60-4807-BEBF-5733FD295D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0522212-131B-4151-A9D2-81ED68F48C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0522212-131B-4151-A9D2-81ED68F48C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0522212-131B-4151-A9D2-81ED68F48C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0522212-131B-4151-A9D2-81ED68F48C8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

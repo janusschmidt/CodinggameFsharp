@@ -54,7 +54,6 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
     <Compile Include="StockExchangeLosses.fs" />
     <Compile Include="Tests\StockExchangeLossesTest.fs" />
     <Content Include="packages.config" />
