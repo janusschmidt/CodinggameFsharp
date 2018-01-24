@@ -5,7 +5,7 @@ type edge<'a> = {node1:nodeId<'a>; node2:nodeId<'a>; weight:int}
 type node<'a> = {id:nodeId<'a>; shortestDistance:int; path:nodeId<'a> list}
 type graph<'a> = {nodes:node<'a> list; focusNode:nodeId<'a>; visitedNodes:nodeId<'a> list}
 
-let computeDistances (allEdges:edge<'a> list) (focusNodeId:nodeId<'a>):graph<'a> =
+let computeDistances (allEdges:edge<'a> list) (focusNodeId:nodeId<'a>):node<'a> list =
     //Helpers
     let isVisited (id:nodeId<'a>) (visitedNodes:nodeId<'a> list) = List.exists (fun e-> e=id) visitedNodes
     let findEdges id = List.filter (fun e-> e.node1=id || e.node2=id) allEdges
@@ -39,7 +39,7 @@ let computeDistances (allEdges:edge<'a> list) (focusNodeId:nodeId<'a>):graph<'a>
         let orderedUnVisitedNodes = initialGraph.nodes |> List.filter (fun n-> not(isVisited n.id initialGraph.visitedNodes)) |> List.sortBy (fun i->i.shortestDistance)
 
         match orderedUnVisitedNodes with
-        | [] -> initialGraph
+        | [] -> initialGraph.nodes
         | curNode::_ ->
             let updatedGraph = processNode initialGraph curNode
             calculate updatedGraph

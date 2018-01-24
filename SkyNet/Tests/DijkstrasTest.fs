@@ -15,26 +15,13 @@ let ``Example 1`` () =
         {node1="b"; node2="e"; weight=1};
     ]
     
-    let graph = computeDistances edges "c"
+    let nodes = computeDistances edges "c" |> List.sortBy (fun x->x.id)
     
-    Assert.Equal(5, List.length graph.visitedNodes)
+    let expected = [
+        {id="a"; shortestDistance=1;path=["a";"c"]};
+        {id="b"; shortestDistance=4;path=["b";"a";"c"]};
+        {id="c"; shortestDistance=0;path=["c"]};
+        {id="d"; shortestDistance=2;path=["d";"c"]};
+        {id="e"; shortestDistance=5;path=["e";"b";"a";"c"]}];
 
-    //let expected = [
-    //    {id="a"; shortestDistance=0;path="a"};
-    //    {id="a"; shortestDistance=0;path="a"};
-    //    {id="a"; shortestDistance=0;path="a"};
-    //    {id="a"; shortestDistance=0;path="a"};
-    //    {id="a"; shortestDistance=0;path="a"}]
-
-    Assert.Equal(1,2)
-    
-    //res
-    //c: dist=0 path=[c]
-    //a: dist=1 path=[c,a]
-    //b: dist=4 path=[c,a,b]
-    //d: dist=2 path=[c,d]
-    //e: dist=5 path=[c,a,b,e]
-
-    //let res = losses [3;2;4;2;1;5]
-    
-    //Assert.Equal(3, res.largestDrop)
+    Assert.Equal<list<node<string>>>(expected, nodes)
