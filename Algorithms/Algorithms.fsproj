@@ -6,15 +6,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>49c337b9-3713-4f98-89c4-b41c7bc974a4</ProjectGuid>
+    <ProjectGuid>1a103fa8-a0d0-4bd3-8898-5375e602457e</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>SkyNet</RootNamespace>
-    <AssemblyName>SkyNet</AssemblyName>
+    <RootNamespace>Algorithms</RootNamespace>
+    <AssemblyName>Algorithms</AssemblyName>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>SkyNet</Name>
+    <Name>Algorithms</Name>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -54,8 +54,10 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Dijkstras.fs" />
     <Content Include="packages.config" />
-    <Compile Include="SkyNet.fs" />
+    <Compile Include="Tests\DijkstrasTest.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
@@ -83,13 +85,6 @@
     <Reference Include="xunit.execution.desktop">
       <HintPath>..\packages\xunit.extensibility.execution.2.3.1\lib\net452\xunit.execution.desktop.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Algorithms\Algorithms.fsproj">
-      <Name>Algorithms</Name>
-      <Project>{1a103fa8-a0d0-4bd3-8898-5375e602457e}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -11,6 +11,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheLastCrusade", "TheLastCr
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SkyNet", "SkyNet\SkyNet.fsproj", "{49C337B9-3713-4F98-89C4-B41C7BC974A4}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Algorithms", "Algorithms\Algorithms.fsproj", "{1A103FA8-A0D0-4BD3-8898-5375E602457E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{49C337B9-3713-4F98-89C4-B41C7BC974A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49C337B9-3713-4F98-89C4-B41C7BC974A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49C337B9-3713-4F98-89C4-B41C7BC974A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A103FA8-A0D0-4BD3-8898-5375E602457E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A103FA8-A0D0-4BD3-8898-5375E602457E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A103FA8-A0D0-4BD3-8898-5375E602457E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A103FA8-A0D0-4BD3-8898-5375E602457E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿module SkyNet.SkyNet
 
-open SkyNet.Dijkstras
+open Algorithms.Dijkstras
 
 let read = stdin.ReadLine
 let readInts _= (read ()).Split [|' '|] |> Seq.toList |> List.map int

@@ -1,4 +1,4 @@
-﻿module SkyNet.Dijkstras
+﻿module Algorithms.Dijkstras
 
 type nodeId<'a> = 'a
 type edge<'a> = {node1:nodeId<'a>; node2:nodeId<'a>; weight:int}

@@ -1,7 +1,7 @@
-﻿module SkyNet.DijkstrasTest
+﻿module Algorithms.DijkstrasTest
 
 open Xunit
-open SkyNet.Dijkstras
+open Algorithms.Dijkstras
 
 [<Fact>]
 let ``Example 1`` () =
