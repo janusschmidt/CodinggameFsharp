@@ -1,4 +1,5 @@
 ﻿namespace Teads
+(* This method works by using dijkstras on every node, but is too slow*)
 module FindBestStartNode =
     open Algorithms.Dijkstras
 
