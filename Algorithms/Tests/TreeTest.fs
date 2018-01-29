@@ -39,14 +39,14 @@ let edges2 = [
     
 [<Fact>]
 let ``farthestNode 1`` () =
-    let sut = Tree.farthestNode edges1 "1"
+    let sut = edges1 |> Tree.farthestNode "1"
     
     Assert.Equal(4,sut.distance)
     
 [<Fact>]
 let ``farthestNode 2`` () =
     
-    let sut = Tree.farthestNode edges2 "0"
+    let sut = edges2 |> Tree.farthestNode  "0"
     
     Assert.Equal(3,sut.distance)
 
