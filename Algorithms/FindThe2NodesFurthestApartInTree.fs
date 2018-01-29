@@ -1,5 +1,6 @@
 ﻿module Algorithms.FindThe2NodesFurthestApartInTree 
 
+open Graph
 open Dijkstras
 
 (* Method:

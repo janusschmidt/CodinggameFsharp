@@ -54,7 +54,7 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Graph.fs" />
     <Compile Include="Dijkstras.fs" />
     <Compile Include="FindThe2NodesFurthestApartInTree.fs" />
     <Compile Include="FindNodewithLeastMaximumDistanceToNodeFurthestAway.fs" />

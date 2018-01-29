@@ -1,7 +1,8 @@
 ﻿module Algorithms.DijkstrasTest
 
 open Xunit
-open Algorithms.Dijkstras
+open Graph
+open Dijkstras
 
 [<Fact>]
 let ``Example 1`` () =

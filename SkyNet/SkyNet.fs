@@ -1,5 +1,6 @@
 ﻿module SkyNet.SkyNet
 
+open Algorithms.Graph
 open Algorithms.Dijkstras
 
 let read = stdin.ReadLine

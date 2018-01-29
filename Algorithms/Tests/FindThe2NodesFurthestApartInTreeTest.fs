@@ -1,8 +1,8 @@
 ﻿module Algorithms.FindNodeWithShortestDistanceToNodeFarthestAwayTest 
 
 open Xunit
-open Dijkstras
-    
+open Graph
+
 [<Fact>]
 let ``Example 1`` () =
     let edges = [
