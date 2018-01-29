@@ -1,9 +1,9 @@
 ﻿namespace Teads
-module FindBestStartNodeTest =
+module FindNodeWithShortestDistanceToNodeFarthestAwayTest =
 
     open Xunit
     open Algorithms.Dijkstras
-    open Teads.FindBestStartNode
+    open FindNodeWithShortestDistanceToNodeFarthestAway
 
     [<Fact>]
     let ``Example 1`` () =

@@ -1,8 +1,7 @@
 ﻿namespace Teads
-module Teads =
+module Teads2 =
     open Algorithms.Dijkstras
-    open Teads.FindNodeWithShortestDistanceToNodeFarthestAway
-
+    
     let read = stdin.ReadLine
     let readInts _= (read ()).Split [|' '|] |> Seq.toList |> List.map int
 
@@ -13,6 +12,5 @@ module Teads =
         | t1::t2::[] -> {node1=t1;node2=t2;weight=1} 
         | _ -> failwith "Invalid relation")
 
-    match calculateStartNodeWithMinimumNetworkTraversalTime relations with
-    | Some n -> printfn "%i" n.shortestDistance
-    | None -> failwith "calculation error"
+    let node = Algorithms.FindNodewithLeastMaximumDistanceToNodeFurthestAway.calculate relations
+    printfn "%i" node.distance
