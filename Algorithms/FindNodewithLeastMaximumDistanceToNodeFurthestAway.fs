@@ -1,4 +1,5 @@
-﻿module Algorithms.FindNodewithLeastMaximumDistanceToNodeFurthestAway 
+﻿module Algorithms.FindNodewithLeastMaximumDistanceToNodeFurthestAway
+
 open Graph
 open FindThe2NodesFurthestApartInTree
    
