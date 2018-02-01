@@ -21,8 +21,7 @@ let calculate (numbers:string) indexOfLineToCalculate =
             let newSeq = numberSeq |> parseLine 
             calculateInner newSeq (linesLeftToCalculate - 1)
     
-    let res = calculateInner (numbers.Split [|' '|] |> Array.toList) indexOfLineToCalculate
-    res
+    calculateInner (numbers.Split [|' '|] |> Array.toList) indexOfLineToCalculate
     
 let run _ =
     let numberSeq = stdin.ReadLine()
