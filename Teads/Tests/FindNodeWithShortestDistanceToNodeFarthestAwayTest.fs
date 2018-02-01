@@ -2,7 +2,7 @@
 module FindNodeWithShortestDistanceToNodeFarthestAwayTest =
 
     open Xunit
-    open Algorithms.Dijkstras
+    open Algorithms.Graph
     open FindNodeWithShortestDistanceToNodeFarthestAway
 
     [<Fact>]

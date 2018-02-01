@@ -1,5 +1,6 @@
-﻿module Algorithms.FindNodewithLeastMaximumDistanceToNodeFurthestAway 
-open Dijkstras
+﻿module Algorithms.FindNodewithLeastMaximumDistanceToNodeFurthestAway
+
+open Graph
 open FindThe2NodesFurthestApartInTree
    
 type middleNodeResult<'a when 'a:equality> = {nodeId:nodeId<'a>; distance:int} 

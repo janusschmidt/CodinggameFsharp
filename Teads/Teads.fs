@@ -1,6 +1,6 @@
 ﻿namespace Teads
 module Teads =
-    open Algorithms.Dijkstras
+    open Algorithms.Graph
     open Teads.FindNodeWithShortestDistanceToNodeFarthestAway
 
     let read = stdin.ReadLine

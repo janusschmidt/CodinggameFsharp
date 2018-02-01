@@ -1,6 +1,7 @@
 ﻿namespace Teads
 (* This method works by using dijkstras on every node, but is too slow*)
 module FindNodeWithShortestDistanceToNodeFarthestAway =
+    open Algorithms.Graph
     open Algorithms.Dijkstras
 
     let isLeafNode nodeId edges =

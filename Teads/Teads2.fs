@@ -1,6 +1,6 @@
 ﻿namespace Teads
 module Teads2 =
-    open Algorithms.Dijkstras
+    open Algorithms.Graph
     
     let read = stdin.ReadLine
     let readInts _= (read ()).Split [|' '|] |> Seq.toList |> List.map int
