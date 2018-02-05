@@ -17,6 +17,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Teads", "Teads\Teads.fsproj
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConwaySequence", "ConwaySequence\ConwaySequence.fsproj", "{88262179-4DC8-40AE-A258-E65564CBD6F5}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NetworkCabling", "NetworkCabling\NetworkCabling.fsproj", "{126C1EDE-4DDF-4F88-B4D3-4F219FAEF38F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{88262179-4DC8-40AE-A258-E65564CBD6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88262179-4DC8-40AE-A258-E65564CBD6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88262179-4DC8-40AE-A258-E65564CBD6F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126C1EDE-4DDF-4F88-B4D3-4F219FAEF38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126C1EDE-4DDF-4F88-B4D3-4F219FAEF38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126C1EDE-4DDF-4F88-B4D3-4F219FAEF38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126C1EDE-4DDF-4F88-B4D3-4F219FAEF38F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
