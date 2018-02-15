@@ -51,7 +51,6 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
     <Compile Include="NetworkCabling.fs" />
     <Content Include="packages.config" />
   </ItemGroup>

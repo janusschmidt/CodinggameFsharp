@@ -54,7 +54,6 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="AssemblyInfo.fs" />
     <Compile Include="FindNodeWithShortestDistanceToNodeFarthestAway.fs" />
     <Compile Include="Teads.fs" />
     <Compile Include="Teads2.fs" />
