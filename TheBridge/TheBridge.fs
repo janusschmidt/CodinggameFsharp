@@ -1,6 +1,5 @@
 ﻿module TheBridge.TheBridge
 
-
 type action = | Speed | Slow | Jump | Wait | Up | Down
 let allActions = [Speed; Wait; Up; Down; Jump; Slow; ]
 
@@ -13,7 +12,7 @@ type result =
 
 let parseRoadType c = if c = '.' then Safe else Hole
 let laneSeqParser l = Seq.map parseRoadType l |> Seq.toArray
-let maxDepth = 3
+let maxDepth = 5
 
 (* get new state of bikes with crashed bikes removed *)
 let getNewState action (road:roadType[][]) (bikeState:bikesInfo) =
@@ -59,19 +58,23 @@ let getNewState action (road:roadType[][]) (bikeState:bikesInfo) =
             if safeDrive then Some ns else None
         )
 
-(* Calculate new action by using depth first search*)
+(* Calculate new action by using depth first search*) 
 let calculateAction (bikeInfos:bikesInfo) road numberOfBikesThatMustSurvive:action =
-    let rec calculateActionInner (bikeInfos:bikesInfo) road depth  usedStates:action option =
+    let rec calculateActionInner (bikeInfos:bikesInfo) road depth usedStates tryFindActionWithNoBikeLosses:action option =
+        let noActiveBikesBefore = List.length bikeInfos
         allActions |> List.tryFind (fun action -> 
             let newState = getNewState action road bikeInfos
             let noActiveBikesAfter = List.length newState
-            let notTooHeavyBikeLoss = (noActiveBikesAfter >= numberOfBikesThatMustSurvive)
+            let notTooHeavyBikeLoss = (tryFindActionWithNoBikeLosses && noActiveBikesAfter = noActiveBikesBefore) || (noActiveBikesAfter >= numberOfBikesThatMustSurvive)
             let newStateNotUsedState = usedStates |> List.contains newState |> not
             let stateOk = notTooHeavyBikeLoss && newStateNotUsedState
-            (depth=maxDepth || (stateOk && (calculateActionInner newState road (depth+1) (newState::usedStates) |> Option.isSome))))
+            (depth=maxDepth || (stateOk && (calculateActionInner newState road (depth+1) (newState::usedStates) tryFindActionWithNoBikeLosses |> Option.isSome))))
     
-    match calculateActionInner bikeInfos road 0 [bikeInfos] with
-    | None -> failwith "No solution without bikeLoss"
+    match calculateActionInner bikeInfos road 0 [bikeInfos] true with
+    | None -> 
+        match calculateActionInner bikeInfos road 0 [bikeInfos] false with
+        | None -> failwith "No solution found"
+        | Some s -> s
     | Some s -> s
 
 (* gameloop. tries to calculate safe path until finish *)
