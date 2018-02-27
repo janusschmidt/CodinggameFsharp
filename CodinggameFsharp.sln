@@ -23,6 +23,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheBridge", "TheBridge\TheB
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PhoneNumbers", "PhoneNumbers\PhoneNumbers.fsproj", "{3BBF0E37-2E09-4BE4-8D7D-7382B5E48EB3}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DwarfsOnGiants", "DwarfsOnGiants\DwarfsOnGiants.fsproj", "{875A894C-4F64-4569-AD15-D4E6F95DA70F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{3BBF0E37-2E09-4BE4-8D7D-7382B5E48EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBF0E37-2E09-4BE4-8D7D-7382B5E48EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BBF0E37-2E09-4BE4-8D7D-7382B5E48EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{875A894C-4F64-4569-AD15-D4E6F95DA70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{875A894C-4F64-4569-AD15-D4E6F95DA70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{875A894C-4F64-4569-AD15-D4E6F95DA70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{875A894C-4F64-4569-AD15-D4E6F95DA70F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
