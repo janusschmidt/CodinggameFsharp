@@ -21,6 +21,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NetworkCabling", "NetworkCa
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TheBridge", "TheBridge\TheBridge.fsproj", "{7B786CA3-2AB6-4D20-9875-7E21FF9CE94E}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PhoneNumbers", "PhoneNumbers\PhoneNumbers.fsproj", "{3BBF0E37-2E09-4BE4-8D7D-7382B5E48EB3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DwarfsOnGiants", "DwarfsOnGiants\DwarfsOnGiants.fsproj", "{875A894C-4F64-4569-AD15-D4E6F95DA70F}"
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TrafficLights", "TrafficLights\TrafficLights.fsproj", "{151B71ED-99E8-4908-942C-BB2027A1B6F2}"
 EndProject
 Global
